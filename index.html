@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OIDC Request Viewer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>  
+<body>
+  <div class="bar"></div>
+  <div class="centered header" id="divHeader">
+    <table>
+      <tr>
+        <td width="20%">
+          <img src="AzureOIDC.png"/>
+        </td>
+        <td>
+          <label for="divHeader" class="headerText">Azure OIDC Request Viewer</label>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="centered content">
+    <div class="divTable">
+      <div class="divTableBody">
+        <div class="divTableRow" >
+          <div class="divTableCell" >
+            <label class="uritext" for="name">URI</label>
+          </div>
+          <div class="divTableCell">
+            <textarea id="txtURI" cols="30" rows="2"></textarea>
+          </div>
+          <div class="divTableCell">
+          </div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell">
+            <div id="fifth" class="buttonBox">
+              <button id="btnParse">Parse URI</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <table id="tableParams" class="results">
+    <tbody></tbody>
+  </table>
+</div>
+
+  
+  <script src="./index.js"></script>
+</body>
+</html>
+
